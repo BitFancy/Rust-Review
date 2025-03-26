@@ -1,5 +1,4 @@
 fn main() {
-    println!("Hello, world!");
     let mut i = 0;
     let i_ref = &mut i;
     *i_ref += 1;
