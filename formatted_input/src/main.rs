@@ -37,6 +37,11 @@ fn main() {
     println!("My name is {0}, {1}, {0}", "Bond", "James");
     // FIXME ^ Add the missing argument: "James"
 
+    println!("Hello {:5}!", "x");
+println!("Hello {:1$}!", "x", 5);
+println!("Hello {1:0$}!", 5, "x");
+println!("Hello {:width$}!", "x", width = 5);
+
     // Only types that implement fmt::Display can be formatted with `{}`. User-
     // defined types do not implement fmt::Display by default.
 
